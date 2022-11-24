@@ -4,6 +4,76 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".RegisterActivity">
+    android:background="@drawable/fondo1corpapp"
+    tools:context=".RegisterActivity"
+    tools:layout_editor_absoluteX="-29dp"
+    tools:layout_editor_absoluteY="-49dp">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="350dp"
+        android:layout_height="535dp"
+        android:background="#FFEDD9"
+        tools:layout_editor_absoluteX="29dp"
+        tools:layout_editor_absoluteY="67dp">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="177dp"
+            android:layout_height="35dp"
+            android:text="REGISTRARSE"
+            android:textSize="25dp"
+            android:textColor="#00C2B7"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="88dp"
+            tools:layout_editor_absoluteY="18dp" />
+
+        <EditText
+            android:id="@+id/editTextTextPersonName2"
+            android:layout_width="204dp"
+            android:layout_height="38dp"
+            android:ems="10"
+            android:hint="ej. luis carlos"
+            android:inputType="textPersonName"
+            tools:layout_editor_absoluteX="119dp"
+            tools:layout_editor_absoluteY="58dp" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="nombres:"
+            android:textSize="20dp"
+            tools:layout_editor_absoluteX="27dp"
+            tools:layout_editor_absoluteY="61dp" />
+
+        <EditText
+            android:id="@+id/editTextTextPersonName2"
+            android:layout_width="204dp"
+            android:layout_height="38dp"
+            android:ems="10"
+            android:hint="ej. Carlos Alberto"
+            android:inputType="textPersonName"
+            tools:layout_editor_absoluteX="119dp"
+            tools:layout_editor_absoluteY="88dp" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="apellidos:"
+            android:textSize="20dp"
+            tools:layout_editor_absoluteX="27dp"
+            tools:layout_editor_absoluteY="91dp" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" INGRESAR >>"
+            tools:layout_editor_absoluteX="108dp"
+            tools:layout_editor_absoluteY="465dp" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
