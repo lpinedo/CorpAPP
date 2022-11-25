@@ -5,13 +5,16 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
+import android.text.SpannableString;
+import android.text.style.ClickableSpan;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
 
 public class LoginActivity extends AppCompatActivity {
 
     Button btn_loginIn;
-    Button txt_aquiGo;
+    //String txt_aquiGo;
 
     @SuppressLint("MissingInflatedId")
     @Override
@@ -27,6 +30,10 @@ public class LoginActivity extends AppCompatActivity {
             }
         });
 
+        TextView textView = findViewById(R.id.txt_notUser2Id);
+        String text ="AQUI!!!";
+        SpannableString ss = new SpannableString(text);
+        //ClickableSpan onClick(Vi);
 
     }
 }
