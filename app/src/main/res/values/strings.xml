@@ -14,6 +14,12 @@
     <string name="txt_sexR">Sexo: </string>
     <string name="txt_emailR">Correo: </string>
     <string name="txt_mobilR">Celular: </string>
+    <string name="txt_LogIn">LOGIN</string>
+    <string name="txt_LogInEmail">Correo</string>
+    <string name="txt_LogInPasswd">Contraseña</string>
+    <string name="txt_LogInIn">INGRESAR</string>
+
+
     <string name="email">Email</string>
     <string name="registrar"><![CDATA[REGISTRAR >>]]></string>
     <string name="carrera">Carrera</string>
@@ -22,4 +28,6 @@
     <string name="fecha_de_nacimiento">Fecha de Nacimiento</string>
     <string name="seleccion_una_opci_n">Seleccion una opción</string>
     <string name="nombreR">Nombre</string>
+    <string name="contrase_a">CONTRASEÑA</string>
+    <string name="correo">CORREO</string>
 </resources>

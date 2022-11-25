@@ -15,6 +15,8 @@ public class MenActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_men);
+        this.setTitle("Mi mundo");
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         btn_imcAdd = findViewById(R.id.btn_addimc);
         btn_imcAdd.setOnClickListener(new View.OnClickListener() {
@@ -23,5 +25,12 @@ public class MenActivity extends AppCompatActivity {
                 startActivity(new Intent(MenActivity.this, AddImcActivity.class));
             }
         });
+    }
+
+    @Override
+    public boolean onSupportNavigateUp() {
+        //return super.onSupportNavigateUp();
+        onBackPressed();
+        return false;
     }
 }

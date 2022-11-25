@@ -47,7 +47,7 @@ public class RegisterActivity extends AppCompatActivity {
 
         mySpinner.setAdapter(adp);
 
-        btn_registerR = findViewById(R.id.btn_register);
+        btn_registerR = findViewById(R.id.btn_loginP);
         btn_registerR.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
