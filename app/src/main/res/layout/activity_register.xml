@@ -11,176 +11,231 @@
 
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_width="346dp"
-        android:layout_height="501dp"
+        android:id="@+id/constraintLayout"
+        android:layout_width="354dp"
+        android:layout_height="567dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
         android:background="#FFEDD9"
-        tools:layout_editor_absoluteX="32dp"
-        tools:layout_editor_absoluteY="89dp">
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/txt_TittleR"
+            android:layout_width="177dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="8dp"
+            android:gravity="center"
+            android:text="@string/txt_tittleRegister"
+            android:textColor="@color/tittle"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/txt_nameR"
+            android:layout_width="106dp"
+            android:layout_height="26dp"
+            android:layout_marginTop="80dp"
+            android:text="@string/txt_nameR"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.048"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/txt_InputNameInR"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="68dp"
+            android:autofillHints=""
+            android:ems="10"
+            android:hint="@string/nombreR"
+            android:inputType="textPersonName"
+            android:minHeight="48dp"
+            android:textColorHint="#616161"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.902"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/txt_sexoR"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="@string/txt_sexR"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="@+id/textView2"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@+id/textView2"
+            app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="198dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="12dp"
+            android:contentDescription="@string/seleccion_una_opci_n"
+            app:layout_constraintEnd_toEndOf="@+id/txt_InputFechaInR"
+            app:layout_constraintHorizontal_bias="0.833"
+            app:layout_constraintStart_toStartOf="@+id/txt_InputFechaInR"
+            app:layout_constraintTop_toBottomOf="@+id/txt_InputFechaInR" />
+
+        <EditText
+            android:id="@+id/txt_InputApellidInR"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:ems="10"
+            android:hint="@string/apellido"
+            android:inputType="textPersonName"
+            android:minHeight="48dp"
+            android:textColorHint="#616161"
+            app:layout_constraintEnd_toEndOf="@+id/txt_InputNameInR"
+            app:layout_constraintStart_toStartOf="@+id/txt_InputNameInR"
+            app:layout_constraintTop_toBottomOf="@+id/txt_InputNameInR"
+            android:autofillHints="" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="112dp"
+            android:layout_height="64dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/txt_nacR"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="@+id/txt_apelliR"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@+id/txt_apelliR"
+            app:layout_constraintTop_toBottomOf="@+id/txt_apelliR" />
+
+        <EditText
+            android:id="@+id/txt_InputFechaInR"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:autofillHints=""
+            android:ems="10"
+            android:hint="@string/fecha_de_nacimiento"
+            android:inputType="date"
+            android:minHeight="48dp"
+            android:textColorHint="#616161"
+            app:layout_constraintEnd_toEndOf="@+id/txt_InputApellidInR"
+            app:layout_constraintStart_toStartOf="@+id/txt_InputApellidInR"
+            app:layout_constraintTop_toBottomOf="@+id/txt_InputApellidInR" />
+
+        <EditText
+            android:id="@+id/txt_InputCarreaInR"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:ems="10"
+            android:hint="@string/carrera"
+            android:inputType="textPersonName"
+            android:minHeight="48dp"
+            android:textColorHint="#616161"
+            app:layout_constraintEnd_toEndOf="@+id/spinner"
+            app:layout_constraintStart_toStartOf="@+id/spinner"
+            app:layout_constraintTop_toBottomOf="@+id/spinner"
+            android:autofillHints="" />
+
+        <TextView
+            android:id="@+id/txt_CarreraR"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="36dp"
+            android:text="@string/txt_carrR"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="@+id/txt_sexoR"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@+id/txt_sexoR"
+            app:layout_constraintTop_toBottomOf="@+id/txt_sexoR" />
+
+        <TextView
+            android:id="@+id/txt_emailR"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="36dp"
+            android:text="@string/txt_emailR"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="@+id/txt_CarreraR"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@+id/txt_CarreraR"
+            app:layout_constraintTop_toBottomOf="@+id/txt_CarreraR" />
+
+        <EditText
+            android:id="@+id/txt_InputEmailInR"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:autofillHints=""
+            android:ems="10"
+            android:hint="@string/email"
+            android:inputType="textEmailAddress"
+            android:minHeight="48dp"
+            android:textColorHint="#616161"
+            app:layout_constraintEnd_toEndOf="@+id/txt_InputCarreaInR"
+            app:layout_constraintStart_toStartOf="@+id/txt_InputCarreaInR"
+            app:layout_constraintTop_toBottomOf="@+id/txt_InputCarreaInR"
+            tools:ignore="TextContrastCheck,TextContrastCheck,TextContrastCheck" />
+
+        <TextView
+            android:id="@+id/txt_mobilR"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:text="@string/txt_mobilR"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="@+id/txt_emailR"
+            app:layout_constraintHorizontal_bias="0.666"
+            app:layout_constraintStart_toStartOf="@+id/txt_emailR"
+            app:layout_constraintTop_toBottomOf="@+id/txt_emailR" />
+
+        <EditText
+            android:id="@+id/txt_InputMobilInR"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:autofillHints=""
+            android:ems="10"
+            android:hint="@string/celular"
+            android:inputType="phone"
+            android:minHeight="48dp"
+            android:textColorHint="#616161"
+            app:layout_constraintEnd_toEndOf="@+id/txt_InputEmailInR"
+            app:layout_constraintStart_toStartOf="@+id/txt_InputEmailInR"
+            app:layout_constraintTop_toBottomOf="@+id/txt_InputEmailInR" />
+
 
         <Button
-            android:id="@+id/button"
+            android:id="@+id/btn_register"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text=" REGISTRAR >>"
-            tools:layout_editor_absoluteX="101dp"
-            tools:layout_editor_absoluteY="424dp" />
+            android:layout_marginBottom="16dp"
+            android:text="@string/registrar"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.502"
+            app:layout_constraintStart_toStartOf="parent" />
 
         <TextView
-            android:id="@+id/textView2"
+            android:id="@+id/txt_apelliR"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="nombres:"
-            android:textSize="20dp"
-            tools:layout_editor_absoluteX="23dp"
-            tools:layout_editor_absoluteY="63dp" />
+            android:layout_marginTop="24dp"
+            android:text="@string/txt_apellidoR"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="@+id/txt_nameR"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@+id/txt_nameR"
+            app:layout_constraintTop_toBottomOf="@+id/txt_nameR" />
 
-        <TextView
-            android:id="@+id/textView2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="apellidos:"
-            android:textSize="20dp"
-            tools:layout_editor_absoluteX="23dp"
-            tools:layout_editor_absoluteY="92dp" />
 
-        <TextView
-            android:id="@+id/textView7"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="sexo:"
-            android:textSize="20dp"
-            tools:layout_editor_absoluteX="23dp"
-            tools:layout_editor_absoluteY="178dp" />
-
-        <EditText
-            android:id="@+id/editTextTextPersonName2"
-            android:layout_width="210dp"
-            android:layout_height="40dp"
-            android:ems="10"
-            android:inputType="textPersonName"
-            android:text="Name"
-            tools:layout_editor_absoluteX="120dp"
-            tools:layout_editor_absoluteY="61dp" />
-
-        <EditText
-            android:id="@+id/editTextTextPersonName4"
-            android:layout_width="210dp"
-            android:layout_height="40dp"
-            android:ems="10"
-            android:inputType="textPersonName"
-            android:text="Name"
-            tools:layout_editor_absoluteX="120dp"
-            tools:layout_editor_absoluteY="90dp" />
-
-        <TextView
-            android:id="@+id/textView2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="fecha de nacimiento:"
-            android:textSize="20dp"
-            tools:layout_editor_absoluteX="23dp"
-            tools:layout_editor_absoluteY="130dp" />
-
-        <EditText
-            android:id="@+id/editTextDate"
-            android:layout_width="120dp"
-            android:layout_height="35dp"
-            android:ems="10"
-            android:inputType="date"
-            tools:layout_editor_absoluteX="210dp"
-            tools:layout_editor_absoluteY="130dp" />
-
-        <TextView
-            android:id="@+id/textView"
-            android:layout_width="177dp"
-            android:layout_height="35dp"
-            android:text="REGISTRARSE"
-            android:textColor="#00C2B7"
-            android:textSize="25dp"
-            android:textStyle="bold"
-            tools:layout_editor_absoluteX="84dp"
-            tools:layout_editor_absoluteY="18dp" />
-
-        <EditText
-            android:id="@+id/editTextTextPersonName5"
-            android:layout_width="233dp"
-            android:layout_height="39dp"
-            android:ems="10"
-            android:inputType="textPersonName"
-            android:text="Name"
-            tools:layout_editor_absoluteX="88dp"
-            tools:layout_editor_absoluteY="358dp" />
-
-        <TextView
-            android:id="@+id/textView6"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="carrera:"
-            android:textSize="20dp"
-            tools:layout_editor_absoluteX="19dp"
-            tools:layout_editor_absoluteY="364dp" />
-
-        <TextView
-            android:id="@+id/textView4"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="correo:"
-            android:textSize="20dp"
-            tools:layout_editor_absoluteX="19dp"
-            tools:layout_editor_absoluteY="299dp" />
-
-        <EditText
-            android:id="@+id/editTextTextEmailAddress2"
-            android:layout_width="226dp"
-            android:layout_height="36dp"
-            android:ems="10"
-            android:inputType="textEmailAddress"
-            tools:layout_editor_absoluteX="94dp"
-            tools:layout_editor_absoluteY="297dp" />
-
-        <TextView
-            android:id="@+id/textView5"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="movil:"
-            android:textSize="20dp"
-            tools:layout_editor_absoluteX="19dp"
-            tools:layout_editor_absoluteY="332dp" />
-
-        <EditText
-            android:id="@+id/editTextPhone"
-            android:layout_width="241dp"
-            android:layout_height="42dp"
-            android:ems="10"
-            android:inputType="phone"
-            tools:layout_editor_absoluteX="77dp"
-            tools:layout_editor_absoluteY="323dp" />
-
-        <RadioGroup
-            android:layout_width="170dp"
-            android:layout_height="112dp"
-            tools:layout_editor_absoluteX="100dp"
-            tools:layout_editor_absoluteY="174dp">
-
-            <RadioButton
-                android:id="@+id/radioButton"
-                android:layout_width="match_parent"
-                android:layout_height="36dp"
-                android:text="masculino" />
-
-            <RadioButton
-                android:id="@+id/radioButton2"
-                android:layout_width="match_parent"
-                android:layout_height="37dp"
-                android:text="femenino" />
-
-            <RadioButton
-                android:id="@+id/radioButton4"
-                android:layout_width="match_parent"
-                android:layout_height="33dp"
-                android:text="otro" />
-
-        </RadioGroup>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

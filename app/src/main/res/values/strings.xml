@@ -1,3 +1,25 @@
 <resources>
     <string name="app_name">CorpApp</string>
+    <string name="nombre">Nombre</string>
+
+    <string name="btn_addimc">Registrar IMC</string>
+    <string name="btn_goRegisterView">Registrarse</string>
+    <string name="btn_Calculate">Calcular</string>
+
+    <string name="txt_tittleRegister">REGISTRO</string>
+    <string name="txt_nameR">Nombre: </string>
+    <string name="txt_apellidoR">Apellido: </string>
+    <string name="txt_nacR">Fecha de nacimiento: </string>
+    <string name="txt_carrR">Carrera: </string>
+    <string name="txt_sexR">Sexo: </string>
+    <string name="txt_emailR">Correo: </string>
+    <string name="txt_mobilR">Celular: </string>
+    <string name="email">Email</string>
+    <string name="registrar"><![CDATA[REGISTRAR >>]]></string>
+    <string name="carrera">Carrera</string>
+    <string name="apellido">Apellido</string>
+    <string name="celular">Celular</string>
+    <string name="fecha_de_nacimiento">Fecha de Nacimiento</string>
+    <string name="seleccion_una_opci_n">Seleccion una opción</string>
+    <string name="nombreR">Nombre</string>
 </resources>

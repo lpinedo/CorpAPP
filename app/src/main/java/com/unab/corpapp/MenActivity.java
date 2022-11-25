@@ -7,20 +7,20 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class InitActivity extends AppCompatActivity {
+public class MenActivity extends AppCompatActivity {
 
-    Button btn_goRegister;
+    Button btn_imcAdd;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_init);
+        setContentView(R.layout.activity_men);
 
-        btn_goRegister = findViewById(R.id.btn_registerGoView);
-        btn_goRegister.setOnClickListener(new View.OnClickListener() {
+        btn_imcAdd = findViewById(R.id.btn_addimc);
+        btn_imcAdd.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(InitActivity.this, RegisterActivity.class));
+                startActivity(new Intent(MenActivity.this, AddImcActivity.class));
             }
         });
     }
