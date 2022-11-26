@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "496647536280",
+    "project_id": "corpappdb",
+    "storage_bucket": "corpappdb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:496647536280:android:5eb96731309b50f3d85aed",
+        "android_client_info": {
+          "package_name": "com.unab.corpapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "496647536280-jsmtqdjf75ngtfbei72m6hed498ffere.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBJXiXh0kVMOHFBPqUwAQkSnWpEQLTCRQM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "496647536280-jsmtqdjf75ngtfbei72m6hed498ffere.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
