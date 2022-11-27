@@ -4,127 +4,105 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/fondo1corpapp"
+    android:background="@drawable/uno"
     tools:context=".LoginActivity">
 
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_width="330dp"
-        android:layout_height="402dp"
-        android:layout_marginStart="40dp"
-        android:layout_marginTop="148dp"
-        android:layout_marginEnd="41dp"
-        android:layout_marginBottom="181dp"
-        android:background="#FFEDD9"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        android:layout_width="277dp"
+        android:layout_height="351dp"
+        android:background="@color/white"
+        tools:layout_editor_absoluteX="73dp"
+        tools:layout_editor_absoluteY="186dp">
 
-        <androidx.constraintlayout.widget.ConstraintLayout
-            android:layout_width="264dp"
-            android:layout_height="335dp"
-            android:layout_marginStart="33dp"
-            android:layout_marginTop="33dp"
-            android:layout_marginEnd="32dp"
-            android:layout_marginBottom="34dp"
-            android:background="@color/white"
-            app:layout_constraintBottom_toBottomOf="parent"
+        <TextView
+            android:id="@+id/txt_loginTittle"
+            android:layout_width="128dp"
+            android:layout_height="51dp"
+            android:layout_marginStart="68dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="68dp"
+            android:layout_marginBottom="39dp"
+            android:gravity="center"
+            android:text="@string/txt_LogIn"
+            android:textSize="40sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/txt_emailLogin"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent">
+            app:layout_constraintTop_toTopOf="parent" />
 
-            <TextView
-                android:id="@+id/txt_loginTittle"
-                android:layout_width="128dp"
-                android:layout_height="51dp"
-                android:layout_marginStart="68dp"
-                android:layout_marginTop="32dp"
-                android:layout_marginEnd="68dp"
-                android:layout_marginBottom="39dp"
-                android:gravity="center"
-                android:text="@string/txt_LogIn"
-                android:textSize="40sp"
-                android:textStyle="bold"
-                app:layout_constraintBottom_toTopOf="@+id/txt_emailLogin"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+        <EditText
+            android:id="@+id/txt_emailLogin"
+            android:layout_width="208dp"
+            android:layout_height="53dp"
+            android:layout_marginStart="27dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="27dp"
+            android:autofillHints=""
+            android:ems="10"
+            android:hint="@string/correo"
+            android:inputType="textEmailAddress"
+            android:minHeight="48dp"
+            android:textColorHint="#757575"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txt_loginTittle" />
 
-            <EditText
-                android:id="@+id/txt_emailLogin"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="27dp"
-                android:layout_marginTop="24dp"
-                android:layout_marginEnd="27dp"
-                android:autofillHints=""
-                android:ems="10"
-                android:hint="@string/correo"
-                android:inputType="textEmailAddress"
-                android:minHeight="48dp"
-                android:textColorHint="#757575"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.0"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/txt_loginTittle" />
+        <EditText
+            android:id="@+id/txt_passwdLogin"
+            android:layout_width="215dp"
+            android:layout_height="51dp"
+            android:layout_marginStart="27dp"
+            android:layout_marginTop="19dp"
+            android:layout_marginEnd="27dp"
+            android:layout_marginBottom="25dp"
+            android:autofillHints=""
+            android:ems="10"
+            android:hint="@string/contrase_a"
+            android:inputType="textPassword"
+            android:minHeight="48dp"
+            android:textColorHint="#757575"
+            app:layout_constraintBottom_toTopOf="@+id/btn_loginP"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txt_emailLogin" />
 
-            <EditText
-                android:id="@+id/txt_passwdLogin"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="27dp"
-                android:layout_marginTop="19dp"
-                android:layout_marginEnd="27dp"
-                android:layout_marginBottom="25dp"
-                android:autofillHints=""
-                android:ems="10"
-                android:hint="@string/contrase_a"
-                android:inputType="textPassword"
-                android:minHeight="48dp"
-                android:textColorHint="#757575"
-                app:layout_constraintBottom_toTopOf="@+id/btn_loginP"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/txt_emailLogin" />
+        <Button
+            android:id="@+id/btn_loginP"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="72dp"
+            android:layout_marginBottom="60dp"
+            android:text="@string/txt_LogInIn"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
 
-            <Button
-                android:id="@+id/btn_loginP"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="72dp"
-                android:layout_marginEnd="72dp"
-                android:layout_marginBottom="60dp"
-                android:text="@string/txt_LogInIn"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="1.0"
-                app:layout_constraintStart_toStartOf="parent" />
+        <TextView
+            android:id="@+id/txt_notUserId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="6dp"
+            android:layout_marginEnd="4dp"
+            android:layout_marginBottom="7dp"
+            android:text="No tienes un usuario.. Crea uno "
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/txt_notUser2Id"
+            app:layout_constraintStart_toStartOf="parent" />
 
-            <TextView
-                android:id="@+id/txt_notUserId"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="6dp"
-                android:layout_marginEnd="4dp"
-                android:layout_marginBottom="7dp"
-                android:text="No tienes un usuario.. Crea uno "
-                android:textStyle="bold"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toStartOf="@+id/txt_notUser2Id"
-                app:layout_constraintStart_toStartOf="parent" />
-
-            <TextView
-                android:id="@+id/txt_notUser2Id"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="7dp"
-                android:text="AQUI!!!"
-                android:textColor="@color/design_default_color_error"
-                android:textStyle="bold"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toEndOf="@+id/txt_notUserId" />
-        </androidx.constraintlayout.widget.ConstraintLayout>
+        <TextView
+            android:id="@+id/txt_notUser2Id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="7dp"
+            android:text="AQUI!!!"
+            android:textColor="@color/design_default_color_error"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/txt_notUserId" />
     </androidx.constraintlayout.widget.ConstraintLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

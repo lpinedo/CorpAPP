@@ -4,239 +4,225 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/fondo1corpapp"
+    android:background="@drawable/register"
     tools:context=".RegisterActivity"
     tools:layout_editor_absoluteX="-29dp"
     tools:layout_editor_absoluteY="-49dp">
 
 
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/constraintLayout"
-        android:layout_width="354dp"
-        android:layout_height="567dp"
-        android:layout_marginStart="32dp"
-        android:layout_marginEnd="32dp"
-        android:background="#FFEDD9"
+    <TextView
+        android:id="@+id/txt_TittleR"
+        android:layout_width="177dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="72dp"
+        android:gravity="center"
+        android:text="@string/txt_tittleRegister"
+        android:textColor="@color/tittle"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.457"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/txt_InputCarreaInR"
+        android:layout_width="210dp"
+        android:layout_height="42dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/carrera"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:textColorHint="#616161"
+        tools:layout_editor_absoluteX="158dp"
+        tools:layout_editor_absoluteY="338dp" />
+
+    <EditText
+        android:id="@+id/txt_InputMobilInR"
+        android:layout_width="211dp"
+        android:layout_height="38dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/celular"
+        android:inputType="phone"
+        android:minHeight="48dp"
+        android:textColorHint="#616161"
+        tools:layout_editor_absoluteX="158dp"
+        tools:layout_editor_absoluteY="392dp" />
+
+    <EditText
+        android:id="@+id/txt_InputApellidInR"
+        android:layout_width="208dp"
+        android:layout_height="40dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/apellido"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:textColorHint="#616161"
+        tools:layout_editor_absoluteX="158dp"
+        tools:layout_editor_absoluteY="190dp" />
+
+    <EditText
+        android:id="@+id/txt_InputNameInR"
+        android:layout_width="203dp"
+        android:layout_height="46dp"
+        android:layout_marginEnd="40dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/nombreR"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:textColorHint="#616161"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:layout_editor_absoluteY="134dp" />
+
+    <TextView
+        android:id="@+id/txt_nameR"
+        android:layout_width="79dp"
+        android:layout_height="32dp"
+        android:layout_marginEnd="44dp"
+        android:text="@string/txt_nameR"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toStartOf="@+id/txt_InputNameInR"
+        tools:layout_editor_absoluteY="143dp" />
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="211dp"
+        android:layout_height="33dp"
+        android:contentDescription="@string/seleccion_una_opci_n"
+        tools:layout_editor_absoluteX="158dp"
+        tools:layout_editor_absoluteY="294dp" />
+
+    <TextView
+        android:id="@+id/txt_sexoR"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/txt_sexR"
+        android:textSize="20sp"
+        tools:layout_editor_absoluteX="73dp"
+        tools:layout_editor_absoluteY="303dp" />
+
+    <EditText
+        android:id="@+id/txt_InputFechaInR"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/fecha_de_nacimiento"
+        android:inputType="date"
+        android:minHeight="48dp"
+        android:textColorHint="#616161"
+        tools:layout_editor_absoluteX="158dp"
+        tools:layout_editor_absoluteY="237dp" />
+
+    <TextView
+        android:id="@+id/txt_mobilR"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/txt_mobilR"
+        android:textSize="20sp"
+        tools:layout_editor_absoluteX="54dp"
+        tools:layout_editor_absoluteY="392dp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="112dp"
+        android:layout_height="64dp"
+        android:text="@string/txt_nacR"
+        android:textSize="20sp"
+        tools:layout_editor_absoluteX="13dp"
+        tools:layout_editor_absoluteY="230dp" />
+
+    <EditText
+        android:id="@+id/txt_InputEmailInR"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/email"
+        android:inputType="textEmailAddress"
+        android:minHeight="48dp"
+        android:textColorHint="#616161"
+        tools:ignore="TextContrastCheck,TextContrastCheck,TextContrastCheck"
+        tools:layout_editor_absoluteX="156dp"
+        tools:layout_editor_absoluteY="430dp" />
+
+    <TextView
+        android:id="@+id/txt_emailR"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/txt_emailR"
+        android:textSize="20sp"
+        tools:layout_editor_absoluteX="57dp"
+        tools:layout_editor_absoluteY="441dp" />
+
+    <TextView
+        android:id="@+id/txt_emailR2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Clave:"
+        android:textSize="20sp"
+        tools:layout_editor_absoluteX="70dp"
+        tools:layout_editor_absoluteY="486dp" />
+
+    <TextView
+        android:id="@+id/txt_apelliR"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/txt_apellidoR"
+        android:textSize="20sp"
+        tools:layout_editor_absoluteX="43dp"
+        tools:layout_editor_absoluteY="190dp" />
+
+    <TextView
+        android:id="@+id/txt_emailR2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Repite Clave:"
+        android:textSize="20sp"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="533dp" />
+
+    <EditText
+        android:id="@+id/editTextTextPassword"
+        android:layout_width="209dp"
+        android:layout_height="38dp"
+        android:ems="10"
+        android:hint="Contraseña"
+        android:inputType="textPassword"
+        tools:layout_editor_absoluteX="160dp"
+        tools:layout_editor_absoluteY="486dp" />
+
+    <EditText
+        android:id="@+id/editTextTextPassword2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="repite contraseña"
+        android:inputType="textPassword"
+        tools:layout_editor_absoluteX="159dp"
+        tools:layout_editor_absoluteY="522dp" />
+
+    <TextView
+        android:id="@+id/txt_CarreraR"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/txt_carrR"
+        android:textSize="20sp"
+        tools:layout_editor_absoluteX="51dp"
+        tools:layout_editor_absoluteY="353dp" />
+
+    <Button
+        android:id="@+id/btn_loginP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="96dp"
+        android:text="@string/registrar"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
-
-        <TextView
-            android:id="@+id/txt_TittleR"
-            android:layout_width="177dp"
-            android:layout_height="0dp"
-            android:layout_marginTop="8dp"
-            android:gravity="center"
-            android:text="@string/txt_tittleRegister"
-            android:textColor="@color/tittle"
-            android:textSize="25sp"
-            android:textStyle="bold"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-
-        <TextView
-            android:id="@+id/txt_nameR"
-            android:layout_width="106dp"
-            android:layout_height="26dp"
-            android:layout_marginTop="80dp"
-            android:text="@string/txt_nameR"
-            android:textSize="20sp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.048"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-
-        <EditText
-            android:id="@+id/txt_InputNameInR"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="68dp"
-            android:autofillHints=""
-            android:ems="10"
-            android:hint="@string/nombreR"
-            android:inputType="textPersonName"
-            android:minHeight="48dp"
-            android:textColorHint="#616161"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.902"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-
-        <TextView
-            android:id="@+id/txt_sexoR"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="24dp"
-            android:text="@string/txt_sexR"
-            android:textSize="20sp"
-            app:layout_constraintEnd_toEndOf="@+id/textView2"
-            app:layout_constraintHorizontal_bias="1.0"
-            app:layout_constraintStart_toStartOf="@+id/textView2"
-            app:layout_constraintTop_toBottomOf="@+id/textView2" />
-
-        <Spinner
-            android:id="@+id/spinner"
-            android:layout_width="198dp"
-            android:layout_height="48dp"
-            android:layout_marginTop="12dp"
-            android:contentDescription="@string/seleccion_una_opci_n"
-            app:layout_constraintEnd_toEndOf="@+id/txt_InputFechaInR"
-            app:layout_constraintHorizontal_bias="0.833"
-            app:layout_constraintStart_toStartOf="@+id/txt_InputFechaInR"
-            app:layout_constraintTop_toBottomOf="@+id/txt_InputFechaInR" />
-
-        <EditText
-            android:id="@+id/txt_InputApellidInR"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:ems="10"
-            android:hint="@string/apellido"
-            android:inputType="textPersonName"
-            android:minHeight="48dp"
-            android:textColorHint="#616161"
-            app:layout_constraintEnd_toEndOf="@+id/txt_InputNameInR"
-            app:layout_constraintStart_toStartOf="@+id/txt_InputNameInR"
-            app:layout_constraintTop_toBottomOf="@+id/txt_InputNameInR"
-            android:autofillHints="" />
-
-        <TextView
-            android:id="@+id/textView2"
-            android:layout_width="112dp"
-            android:layout_height="64dp"
-            android:layout_marginTop="8dp"
-            android:text="@string/txt_nacR"
-            android:textSize="20sp"
-            app:layout_constraintEnd_toEndOf="@+id/txt_apelliR"
-            app:layout_constraintHorizontal_bias="1.0"
-            app:layout_constraintStart_toStartOf="@+id/txt_apelliR"
-            app:layout_constraintTop_toBottomOf="@+id/txt_apelliR" />
-
-        <EditText
-            android:id="@+id/txt_InputFechaInR"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:autofillHints=""
-            android:ems="10"
-            android:hint="@string/fecha_de_nacimiento"
-            android:inputType="date"
-            android:minHeight="48dp"
-            android:textColorHint="#616161"
-            app:layout_constraintEnd_toEndOf="@+id/txt_InputApellidInR"
-            app:layout_constraintStart_toStartOf="@+id/txt_InputApellidInR"
-            app:layout_constraintTop_toBottomOf="@+id/txt_InputApellidInR" />
-
-        <EditText
-            android:id="@+id/txt_InputCarreaInR"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
-            android:ems="10"
-            android:hint="@string/carrera"
-            android:inputType="textPersonName"
-            android:minHeight="48dp"
-            android:textColorHint="#616161"
-            app:layout_constraintEnd_toEndOf="@+id/spinner"
-            app:layout_constraintStart_toStartOf="@+id/spinner"
-            app:layout_constraintTop_toBottomOf="@+id/spinner"
-            android:autofillHints="" />
-
-        <TextView
-            android:id="@+id/txt_CarreraR"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="36dp"
-            android:text="@string/txt_carrR"
-            android:textSize="20sp"
-            app:layout_constraintEnd_toEndOf="@+id/txt_sexoR"
-            app:layout_constraintHorizontal_bias="1.0"
-            app:layout_constraintStart_toStartOf="@+id/txt_sexoR"
-            app:layout_constraintTop_toBottomOf="@+id/txt_sexoR" />
-
-        <TextView
-            android:id="@+id/txt_emailR"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="36dp"
-            android:text="@string/txt_emailR"
-            android:textSize="20sp"
-            app:layout_constraintEnd_toEndOf="@+id/txt_CarreraR"
-            app:layout_constraintHorizontal_bias="1.0"
-            app:layout_constraintStart_toStartOf="@+id/txt_CarreraR"
-            app:layout_constraintTop_toBottomOf="@+id/txt_CarreraR" />
-
-        <EditText
-            android:id="@+id/txt_InputEmailInR"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
-            android:autofillHints=""
-            android:ems="10"
-            android:hint="@string/email"
-            android:inputType="textEmailAddress"
-            android:minHeight="48dp"
-            android:textColorHint="#616161"
-            app:layout_constraintEnd_toEndOf="@+id/txt_InputCarreaInR"
-            app:layout_constraintStart_toStartOf="@+id/txt_InputCarreaInR"
-            app:layout_constraintTop_toBottomOf="@+id/txt_InputCarreaInR"
-            tools:ignore="TextContrastCheck,TextContrastCheck,TextContrastCheck" />
-
-        <TextView
-            android:id="@+id/txt_mobilR"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="40dp"
-            android:text="@string/txt_mobilR"
-            android:textSize="20sp"
-            app:layout_constraintEnd_toEndOf="@+id/txt_emailR"
-            app:layout_constraintHorizontal_bias="0.666"
-            app:layout_constraintStart_toStartOf="@+id/txt_emailR"
-            app:layout_constraintTop_toBottomOf="@+id/txt_emailR" />
-
-        <EditText
-            android:id="@+id/txt_InputMobilInR"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
-            android:autofillHints=""
-            android:ems="10"
-            android:hint="@string/celular"
-            android:inputType="phone"
-            android:minHeight="48dp"
-            android:textColorHint="#616161"
-            app:layout_constraintEnd_toEndOf="@+id/txt_InputEmailInR"
-            app:layout_constraintStart_toStartOf="@+id/txt_InputEmailInR"
-            app:layout_constraintTop_toBottomOf="@+id/txt_InputEmailInR" />
-
-
-        <Button
-            android:id="@+id/btn_loginP"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="16dp"
-            android:text="@string/registrar"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.502"
-            app:layout_constraintStart_toStartOf="parent" />
-
-        <TextView
-            android:id="@+id/txt_apelliR"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="24dp"
-            android:text="@string/txt_apellidoR"
-            android:textSize="20sp"
-            app:layout_constraintEnd_toEndOf="@+id/txt_nameR"
-            app:layout_constraintHorizontal_bias="1.0"
-            app:layout_constraintStart_toStartOf="@+id/txt_nameR"
-            app:layout_constraintTop_toBottomOf="@+id/txt_nameR" />
-
-
-
-    </androidx.constraintlayout.widget.ConstraintLayout>
+        app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
