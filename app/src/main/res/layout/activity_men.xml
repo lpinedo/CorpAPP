@@ -4,22 +4,16 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FFF8F4"
+    android:background="@drawable/interusumen"
     tools:context=".MenActivity">
 
     <LinearLayout
         android:id="@+id/linearLayout2"
-        android:layout_width="0dp"
-        android:layout_height="637dp"
-        android:layout_marginStart="11dp"
-        android:layout_marginEnd="11dp"
+        android:layout_width="317dp"
+        android:layout_height="277dp"
         android:orientation="vertical"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.829">
+        tools:layout_editor_absoluteX="45dp"
+        tools:layout_editor_absoluteY="201dp">
 
         <Button
             android:id="@+id/btn_addimc"
