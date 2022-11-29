@@ -5,231 +5,246 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/register"
-    tools:context=".RegisterActivity"
-    tools:layout_editor_absoluteX="-29dp"
-    tools:layout_editor_absoluteY="-49dp">
+    tools:context=".RegisterActivity">
 
 
     <TextView
         android:id="@+id/txt_TittleR"
         android:layout_width="177dp"
         android:layout_height="0dp"
-        android:layout_marginTop="72dp"
+        android:layout_marginTop="16dp"
         android:gravity="center"
         android:text="@string/txt_tittleRegister"
         android:textColor="@color/tittle"
         android:textSize="25sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.457"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <EditText
-        android:id="@+id/txt_InputCarreaInR"
-        android:layout_width="210dp"
-        android:layout_height="42dp"
-        android:autofillHints=""
-        android:ems="10"
-        android:hint="@string/carrera"
-        android:inputType="textPersonName"
-        android:minHeight="48dp"
-        android:textColorHint="#616161"
-        tools:layout_editor_absoluteX="158dp"
-        tools:layout_editor_absoluteY="338dp" />
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="328dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="@+id/txt_TittleR"
+        app:layout_constraintStart_toStartOf="@+id/txt_TittleR"
+        app:layout_constraintTop_toBottomOf="@+id/txt_TittleR">
 
-    <EditText
-        android:id="@+id/txt_InputMobilInR"
-        android:layout_width="211dp"
-        android:layout_height="38dp"
-        android:autofillHints=""
-        android:ems="10"
-        android:hint="@string/celular"
-        android:inputType="phone"
-        android:minHeight="48dp"
-        android:textColorHint="#616161"
-        tools:layout_editor_absoluteX="158dp"
-        tools:layout_editor_absoluteY="392dp" />
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
 
-    <EditText
-        android:id="@+id/txt_InputApellidInR"
-        android:layout_width="208dp"
-        android:layout_height="40dp"
-        android:autofillHints=""
-        android:ems="10"
-        android:hint="@string/apellido"
-        android:inputType="textPersonName"
-        android:minHeight="48dp"
-        android:textColorHint="#616161"
-        tools:layout_editor_absoluteX="158dp"
-        tools:layout_editor_absoluteY="190dp" />
+            <EditText
+                android:id="@+id/txt_InputNameInR"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#00FFFFFF"
+                android:backgroundTint="#00FFFFFF"
+                android:ems="10"
+                android:hint="@string/nombreR"
+                android:inputType="textPersonName"
+                android:minHeight="48dp"
+                android:textColorHint="#616161"
+                android:textSize="16sp"
+                tools:layout_editor_absoluteX="83dp"
+                tools:layout_editor_absoluteY="130dp" />
 
-    <EditText
-        android:id="@+id/txt_InputNameInR"
-        android:layout_width="203dp"
-        android:layout_height="46dp"
-        android:layout_marginEnd="40dp"
-        android:autofillHints=""
-        android:ems="10"
-        android:hint="@string/nombreR"
-        android:inputType="textPersonName"
-        android:minHeight="48dp"
-        android:textColorHint="#616161"
-        app:layout_constraintEnd_toEndOf="parent"
-        tools:layout_editor_absoluteY="134dp" />
+        </com.google.android.material.textfield.TextInputLayout>
 
-    <TextView
-        android:id="@+id/txt_nameR"
-        android:layout_width="79dp"
-        android:layout_height="32dp"
-        android:layout_marginEnd="44dp"
-        android:text="@string/txt_nameR"
-        android:textSize="20sp"
-        app:layout_constraintEnd_toStartOf="@+id/txt_InputNameInR"
-        tools:layout_editor_absoluteY="143dp" />
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
 
-    <Spinner
-        android:id="@+id/spinner"
-        android:layout_width="211dp"
-        android:layout_height="33dp"
-        android:contentDescription="@string/seleccion_una_opci_n"
-        tools:layout_editor_absoluteX="158dp"
-        tools:layout_editor_absoluteY="294dp" />
+            <EditText
+                android:id="@+id/txt_InputApellidInR"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#00FFFFFF"
+                android:ems="10"
+                android:hint="@string/apellido"
+                android:inputType="textPersonName"
+                android:minHeight="48dp"
+                android:textColorHint="#616161"
+                android:textSize="16sp"
+                tools:layout_editor_absoluteX="139dp"
+                tools:layout_editor_absoluteY="217dp" />
 
-    <TextView
-        android:id="@+id/txt_sexoR"
+        </com.google.android.material.textfield.TextInputLayout>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout5"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="@+id/linearLayout3"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout3">
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/txt_InputFechaInR"
+                android:layout_width="240dp"
+                android:layout_height="48sp"
+                android:background="#00FFFFFF"
+                android:ems="10"
+                android:hint="@string/fecha_de_nacimiento"
+                android:inputType="date"
+                android:minHeight="48dp"
+                android:textColorHint="#616161"
+                android:textSize="16sp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+    </LinearLayout>
+
+    <DatePicker
+        android:id="@+id/dpFechaId"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/txt_sexR"
-        android:textSize="20sp"
-        tools:layout_editor_absoluteX="73dp"
-        tools:layout_editor_absoluteY="303dp" />
+        android:visibility="gone" />
 
-    <EditText
-        android:id="@+id/txt_InputFechaInR"
-        android:layout_width="wrap_content"
+    <ImageButton
+        android:id="@+id/btn_dateId"
+        android:layout_width="57dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="20dp"
+        android:layout_weight="1"
+        android:background="#00FFFFFF"
+        app:layout_constraintEnd_toEndOf="@+id/linearLayout3"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/linearLayout5"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout3"
+        app:srcCompat="@android:drawable/ic_menu_today" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout4"
+        android:layout_width="328dp"
         android:layout_height="wrap_content"
-        android:autofillHints=""
-        android:ems="10"
-        android:hint="@string/fecha_de_nacimiento"
-        android:inputType="date"
-        android:minHeight="48dp"
-        android:textColorHint="#616161"
-        tools:layout_editor_absoluteX="158dp"
-        tools:layout_editor_absoluteY="237dp" />
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="@+id/linearLayout5"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/linearLayout5"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout5">
 
-    <TextView
-        android:id="@+id/txt_mobilR"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/txt_mobilR"
-        android:textSize="20sp"
-        tools:layout_editor_absoluteX="54dp"
-        tools:layout_editor_absoluteY="392dp" />
 
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="112dp"
-        android:layout_height="64dp"
-        android:text="@string/txt_nacR"
-        android:textSize="20sp"
-        tools:layout_editor_absoluteX="13dp"
-        tools:layout_editor_absoluteY="230dp" />
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
 
-    <EditText
-        android:id="@+id/txt_InputEmailInR"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:autofillHints=""
-        android:ems="10"
-        android:hint="@string/email"
-        android:inputType="textEmailAddress"
-        android:minHeight="48dp"
-        android:textColorHint="#616161"
-        tools:ignore="TextContrastCheck,TextContrastCheck,TextContrastCheck"
-        tools:layout_editor_absoluteX="156dp"
-        tools:layout_editor_absoluteY="430dp" />
+            <Spinner
+                android:id="@+id/spinnerId"
+                android:layout_width="match_parent"
+                android:layout_height="50sp"
+                android:contentDescription="@string/seleccion_una_opci_n" />
 
-    <TextView
-        android:id="@+id/txt_emailR"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/txt_emailR"
-        android:textSize="20sp"
-        tools:layout_editor_absoluteX="57dp"
-        tools:layout_editor_absoluteY="441dp" />
+        </com.google.android.material.textfield.TextInputLayout>
 
-    <TextView
-        android:id="@+id/txt_emailR2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Clave:"
-        android:textSize="20sp"
-        tools:layout_editor_absoluteX="70dp"
-        tools:layout_editor_absoluteY="486dp" />
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
 
-    <TextView
-        android:id="@+id/txt_apelliR"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/txt_apellidoR"
-        android:textSize="20sp"
-        tools:layout_editor_absoluteX="43dp"
-        tools:layout_editor_absoluteY="190dp" />
+            <EditText
+                android:id="@+id/txt_InputCarreaInR"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:autofillHints=""
+                android:background="#00FFFFFF"
+                android:ems="10"
+                android:hint="@string/carrera"
+                android:inputType="textPersonName"
+                android:minHeight="48dp"
+                android:textColorHint="#616161" />
 
-    <TextView
-        android:id="@+id/txt_emailR2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Repite Clave:"
-        android:textSize="20sp"
-        tools:layout_editor_absoluteX="8dp"
-        tools:layout_editor_absoluteY="533dp" />
+        </com.google.android.material.textfield.TextInputLayout>
 
-    <EditText
-        android:id="@+id/editTextTextPassword"
-        android:layout_width="209dp"
-        android:layout_height="38dp"
-        android:ems="10"
-        android:hint="Contraseña"
-        android:inputType="textPassword"
-        tools:layout_editor_absoluteX="160dp"
-        tools:layout_editor_absoluteY="486dp" />
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
 
-    <EditText
-        android:id="@+id/editTextTextPassword2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:hint="repite contraseña"
-        android:inputType="textPassword"
-        tools:layout_editor_absoluteX="159dp"
-        tools:layout_editor_absoluteY="522dp" />
+            <EditText
+                android:id="@+id/txt_InputMobilInR"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:autofillHints=""
+                android:background="#00FFFFFF"
+                android:ems="10"
+                android:hint="@string/celular"
+                android:inputType="phone"
+                android:minHeight="48dp"
+                android:textColorHint="#616161" />
 
-    <TextView
-        android:id="@+id/txt_CarreraR"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/txt_carrR"
-        android:textSize="20sp"
-        tools:layout_editor_absoluteX="51dp"
-        tools:layout_editor_absoluteY="353dp" />
+        </com.google.android.material.textfield.TextInputLayout>
 
-    <Button
-        android:id="@+id/btn_loginP"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="72dp"
-        android:text="@string/registrar"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
 
-    <Button
-        android:id="@+id/button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Button"
-        tools:layout_editor_absoluteX="199dp"
-        tools:layout_editor_absoluteY="611dp" />
+            <EditText
+                android:id="@+id/txt_InputEmailInR"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:autofillHints=""
+                android:background="#00FFFFFF"
+                android:ems="10"
+                android:hint="@string/email"
+                android:inputType="textEmailAddress"
+                android:minHeight="48dp"
+                android:textColorHint="#616161" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/editTextTextPassword"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#00FFFFFF"
+                android:ems="10"
+                android:hint="Contraseña"
+                android:inputType="textPassword" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/editTextTextPassword2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#00FFFFFF"
+                android:ems="10"
+                android:hint="Repite contraseña"
+                android:inputType="textPassword"
+                android:minHeight="48dp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/btn_loginP"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/design_default_color_primary_variant"
+            android:gravity="center"
+            android:text="@string/registrar" />
+
+    </LinearLayout>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

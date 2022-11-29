@@ -8,22 +8,25 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
+import android.widget.DatePicker;
+import android.widget.EditText;
 import android.widget.Spinner;
-import android.widget.Toast;
 
 import java.util.ArrayList;
 
 public class RegisterActivity extends AppCompatActivity {
 
-    Button btn_registerR;
+    Button btn_registerR,btn_dateId;
+    EditText name,lastname, dateB,sexo,career,email,mobile;
     private Spinner mySpinner;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_register);
 
-        mySpinner = (Spinner) findViewById(R.id.spinner);
+        mySpinner = (Spinner) findViewById(R.id.spinnerId);
 
         ArrayList<String> listS = new ArrayList<String>();
 
@@ -36,7 +39,7 @@ public class RegisterActivity extends AppCompatActivity {
             @Override
             public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
                 String elemento = (String) mySpinner.getAdapter().getItem(i);
-                Toast.makeText(RegisterActivity.this, "Seleccionaste: "+i, Toast.LENGTH_SHORT).show();
+                //Toast.makeText(RegisterActivity.this, "Seleccionaste: "+i, Toast.LENGTH_SHORT).show();
             }
 
             @Override
