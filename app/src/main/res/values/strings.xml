@@ -30,4 +30,10 @@
     <string name="nombreR">Nombre</string>
     <string name="contrase_a">CONTRASEÑA</string>
     <string name="correo">CORREO</string>
+
+    <string name="hello">Hello World, MyAndroidAppActivity!</string>
+    <!--string name="app_name">MyAndroidApp</string-->
+    <string name="radio_male">Male</string>
+    <string name="radio_female">Female</string>
+    <string name="btn_display">Display</string>
 </resources>
