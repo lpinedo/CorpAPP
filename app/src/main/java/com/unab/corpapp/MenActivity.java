@@ -33,7 +33,7 @@ public class MenActivity extends AppCompatActivity {
         mRecycler.setLayoutManager(new LinearLayoutManager(this));
         Query query = mFirestore.collection("IMC");
         FirestoreRecyclerOptions<Imc> firestoreRecyclerOptions = new FirestoreRecyclerOptions.Builder<Imc>().setQuery(query, Imc.class).build();
-        mAdapter = new ImcAdapter(firestoreRecyclerOptions);
+        mAdapter = new ImcAdapter(firestoreRecyclerOptions, this);
         mAdapter.notifyDataSetChanged();
         mRecycler.setAdapter(mAdapter);
 

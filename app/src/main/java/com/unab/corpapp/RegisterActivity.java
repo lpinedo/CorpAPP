@@ -77,12 +77,14 @@ public class RegisterActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 isAllFieldsChecked = CheckAllFields();
+                startActivity(new Intent(RegisterActivity.this, MenActivity.class));
+                /*
                 if (isAllFieldsChecked) {
-                    startActivity(new Intent(RegisterActivity.this, MenActivity.class));
-                    /*Intent i = new Intent(MainActivity.this, MainActivity2.class);
-                    startActivity(i);*/
+                    //startActivity(new Intent(RegisterActivity.this, MenActivity.class));
+                    Intent i = new Intent(RegisterActivity.this, MenActivity.class);
+                    startActivity(i);
                 }
-
+                */
             }
         });
 
@@ -140,12 +142,12 @@ public class RegisterActivity extends AppCompatActivity {
             return false;
         }
 
-        if (femail.match == 0){
+        /*if (femail.match == 0){
             femail.setError("Este campo es requerido");
             Toast.makeText(RegisterActivity.this, "El campo email no puede estar vacio", Toast.LENGTH_SHORT).show();
 
             return false;
-        }
+        }*/
 
         if (fpwd1.length() == 0){
             fpwd1.setError("Este campo es requerido");
