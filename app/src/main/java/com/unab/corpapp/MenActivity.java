@@ -37,7 +37,7 @@ public class MenActivity extends AppCompatActivity {
         mAdapter.notifyDataSetChanged();
         mRecycler.setAdapter(mAdapter);
 
-        this.setTitle("Mi mundo");
+        this.setTitle("Bienvenid@");
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         btn_imcAdd = findViewById(R.id.btn_addimc);

@@ -11,14 +11,21 @@
         android:id="@+id/linearLayout2"
         android:layout_width="317dp"
         android:layout_height="277dp"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="201dp"
+        android:layout_marginEnd="49dp"
+        android:layout_marginBottom="253dp"
         android:orientation="vertical"
-        tools:layout_editor_absoluteX="45dp"
-        tools:layout_editor_absoluteY="201dp">
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
-        <Button
+        <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/btn_addimc"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:background="#FFEDD9"
             android:text="@string/btn_addimc" />
 
         <androidx.recyclerview.widget.RecyclerView

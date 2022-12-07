@@ -7,22 +7,50 @@
     android:background="@drawable/fondo1corpapp"
     tools:context=".InitActivity">
 
-    <Button
-        android:id="@+id/btn_registerGoView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="256dp"
-        android:text="@string/btn_goRegisterView"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="172dp"
+        android:layout_height="159dp"
+        android:layout_marginTop="148dp"
+        app:layout_constraintEnd_toEndOf="@+id/textView"
+        app:layout_constraintStart_toStartOf="@+id/textView"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/imaini" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="322dp"
+        android:layout_height="98dp"
+        android:layout_marginTop="33dp"
+        android:layout_marginBottom="45dp"
+        android:text="CorpApp es una aplicacion que toma nota y recuerda  tus indices de masa corporal para que cuides  tu salud de forma correcta. "
+        android:textSize="20dp"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toTopOf="@+id/btn_loginGoView"
+        app:layout_constraintEnd_toEndOf="@+id/btn_loginGoView"
+        app:layout_constraintStart_toStartOf="@+id/btn_loginGoView"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
     <Button
         android:id="@+id/btn_loginGoView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/txt_LogIn"
+        android:textColor="@color/white"
         app:layout_constraintBottom_toTopOf="@+id/btn_registerGoView"
         app:layout_constraintEnd_toEndOf="@+id/btn_registerGoView"
+        app:layout_constraintHorizontal_bias="0.448"
         app:layout_constraintStart_toStartOf="@+id/btn_registerGoView" />
+
+    <Button
+        android:id="@+id/btn_registerGoView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="152dp"
+        android:text="@string/btn_goRegisterView"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.507"
+        app:layout_constraintStart_toStartOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
